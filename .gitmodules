@@ -1,0 +1,6 @@
+[submodule "dccomms_ros_msgs"]
+	path = dccomms_ros_msgs
+	url = https://github.com/dcentelles/dccomms_ros_msgs
+[submodule "dccomms_ros"]
+	path = dccomms_ros
+	url = https://github.com/dcentelles/dccomms_ros
