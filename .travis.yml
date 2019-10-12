@@ -13,15 +13,17 @@ cache:
     - $HOME/.ccache
 
 git:
-  quiet: true # optional, silences the cloning of the target repository
+  quiet: false # optional, silences the cloning of the target repository
 
 # configure the build environment(s)
 # https://github.com/ros-industrial/industrial_ci/blob/master/doc/index.rst#variables-you-can-configure
 env:
   global: # global settings for all jobs
     - ROS_REPO=ros
+    - DEBUG_BASH=true
+    - VERBOSE_OUTPUT=true
     - CCACHE_DIR=$HOME/.ccache # enables C/C++ caching in industrial_ci
-    - BEFORE_SCRIPT='git submodule update --recursive --init'
+      #    - BEFORE_SCRIPT='git submodule update --recursive --init'
   matrix: # each line is a job
     - ROS_DISTRO="melodic"
 
@@ -31,6 +33,3 @@ install:
 script:
   - .industrial_ci/travis.sh
 
-
-after_failure:
-  - cat /root/catkin_ws/logs/dccomms_ros/build.cmake.000.log
