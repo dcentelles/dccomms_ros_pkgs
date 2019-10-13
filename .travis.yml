@@ -21,9 +21,8 @@ env:
   global: # global settings for all jobs
     - ROS_REPO=ros
     - DEBUG_BASH=true
-    - VERBOSE_OUTPUT=true
+    - VERBOSE_OUTPUT=false
     - CCACHE_DIR=$HOME/.ccache # enables C/C++ caching in industrial_ci
-      #    - BEFORE_SCRIPT='git submodule update --recursive --init'
   matrix: # each line is a job
     - ROS_DISTRO="melodic"
 
