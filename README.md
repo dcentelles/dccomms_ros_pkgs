@@ -1,4 +1,6 @@
 # dccomms_ros_pkgs
+[![Build Status](https://travis-ci.org/dcentelles/dccomms_ros_pkgs.svg?branch=master)](https://travis-ci.org/dcentelles/dccomms_ros_pkgs)
+
 ROS packages with network simulation utilities. The NS3 library is used, which has been integrated as a git submodule.
 
 ### Dependencies
@@ -14,5 +16,5 @@ Clone this repository into the src folder of your catkin workspace with the *--r
 ### Using the library
 Check the Wiki pages for more info.
 
-[![Build Status](https://travis-ci.org/dcentelles/dccomms_ros_pkgs.svg?branch=master)](https://travis-ci.org/dcentelles/dccomms_ros_pkgs)
+
 
