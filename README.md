@@ -1,5 +1,10 @@
 # dccomms_ros_pkgs
-[![Build Status](https://travis-ci.org/dcentelles/dccomms_ros_pkgs.svg?branch=master)](https://travis-ci.org/dcentelles/dccomms_ros_pkgs)
+
+
+| CI System | Status  |
+|--|--|
+| Travis | [![Build Status](https://travis-ci.org/dcentelles/dccomms_ros_pkgs.svg?branch=master)](https://travis-ci.org/dcentelles/dccomms_ros_pkgs) |
+| ROS build farm (Jenkins) | [![Build Status](http://build.ros.org/job/Mdev__dccomms_ros_pkgs__ubuntu_bionic_amd64/badge/icon)](http://build.ros.org/job/Mdev__dccomms_ros_pkgs__ubuntu_bionic_amd64/) |
 
 ROS packages with network simulation utilities. The NS3 library is used, which has been integrated as a git submodule.
 
